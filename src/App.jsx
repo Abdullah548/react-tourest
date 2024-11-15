@@ -8,7 +8,12 @@ import Pages from './frontend/Pages';
 import Footer from './Components/Footer';
 import Navbar from './Components/Navbar';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+import Designation from './frontend/Destination';
+import Testimonial from './frontend/Testimonial';
+import Booking from './frontend/Booking';
+import Contact from './frontend/Contact';
+import TravelGuide from './frontend/TravelGuide';
+import Page from './frontend/404page';
 import './assets/Style.css';
 
 
@@ -28,6 +33,12 @@ function App() {
         <Route path="/services" element={<Services />} />
         <Route path="/packages" element={<Packages />} />
         <Route path="/pages" element={<Pages />} />
+        <Route path="/destination" element={<Designation />} />
+        <Route path="/testimonial" element={<Testimonial />} />
+        <Route path="/booking" element={<Booking />} />
+        <Route path="/travelGuide" element={<TravelGuide />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="*" element={<Page />} />
         <Route path="/Footer" element={<Footer />} />
         <Route path="/navbar" element={<Navbar />} />
        
